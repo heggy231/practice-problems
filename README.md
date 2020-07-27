@@ -1,2 +1,2 @@
 # practice-problems
-Practice Problems to practice code daily
+Practice problems to practice code daily
