@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>is-within-range</title>
+  </head>
+  <body>
+    <script>
+      // todo: check if the number passed in to the function is less than the min property of the
+      // object or is greater than the max property of the object.
+
+      // if the num is less than the min property or is greater than the max property,
+      // return false because not in the range
+      // else return true
+
+      function isWithinRange(num, obj) {
+        if (num < obj.min || num > obj.max) {
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
