@@ -9,15 +9,11 @@
     <script>
       function zipCodeValidator(str) {
         var strArr = str.split("");
-        if (str.length > 5) {
-          return false;
-        }
-        for (var i = 0; i < strArr.length; i++) {
-          if (!Number.isInteger(Number(strArr[i]))) {
-            return false;
-          }
-        }
-        return true;
+        return str.length <= 5 && !strArr.find(isNotNumber);
+      }
+
+      function isNotNumber(str) {
+        return !Number.isInteger(Number(str));
       }
     </script>
   </body>
