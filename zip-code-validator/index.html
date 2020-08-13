@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zip-code-validator</title>
+  </head>
+  <body>
+    <script>
+      function zipCodeValidator(str) {
+        var strArr = str.split("");
+        if (str.length > 5) {
+          return false;
+        }
+        for (var i = 0; i < strArr.length; i++) {
+          if (!Number.isInteger(Number(strArr[i]))) {
+            return false;
+          }
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
