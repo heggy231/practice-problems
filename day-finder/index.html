@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day-finder</title>
+  </head>
+  <body>
+    <script>
+      function dayFinder(str) {
+        const dayIndex = new Date(str).getDay();
+        switch (dayIndex) {
+          case 0:
+            return "Sunday";
+          case 1:
+            return "Monday";
+          case 2:
+            return "Tuesday";
+          case 3:
+            return "Wedndesday";
+          case 4:
+            return "Thursday";
+          case 5:
+            return "Friday";
+          case 6:
+            return "Saturday";
+        }
+      }
+    </script>
+  </body>
+</html>
