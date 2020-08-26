@@ -8,11 +8,13 @@
   <body>
     <script>
       function accountNumberProtector(cardNumberString) {
-        const lastFourDigits = cardNumberString
-          .split("")
-          .slice(cardNumberString.length - 4, cardNumberString.length)
-          .join("");
-        return "**" + lastFourDigits;
+        return (
+          "**" +
+          cardNumberString
+            .split("")
+            .slice(cardNumberString.length - 4, cardNumberString.length)
+            .join("")
+        );
       }
     </script>
   </body>
