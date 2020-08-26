@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>account-number-protector</title>
+  </head>
+  <body>
+    <script>
+      function accountNumberProtector(cardNumberString) {
+        const lastFourDigits = cardNumberString
+          .split("")
+          .slice(cardNumberString.length - 4, cardNumberString.length)
+          .join("");
+        return "**" + lastFourDigits;
+      }
+    </script>
+  </body>
+</html>
