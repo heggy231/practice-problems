@@ -8,13 +8,10 @@
   <body>
     <script>
       function accountNumberProtector(cardNumberString) {
-        return (
-          "**" +
-          cardNumberString
-            .split("")
-            .slice(cardNumberString.length - 4, cardNumberString.length)
-            .join("")
-        );
+        return `**${cardNumberString
+          .split("")
+          .slice(cardNumberString.length - 4, cardNumberString.length)
+          .join("")}`;
       }
     </script>
   </body>
